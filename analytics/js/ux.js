@@ -2,20 +2,20 @@ var app = angular.module('myApp', ['leaflet-directive']);
 app.controller("mainCtrl", [ "$scope", "$http", function($scope, $http) {
     $scope.addressPointsToMarkers = function(points) {
 	return points.map(function(ap) {
-	    // if (ap['service'] == 'Flywheel') {
-	    // 	apicon = $scope.flywheelIcon
-	    // } else if (ap['service'] == 'Uber') {
-	    // 	apicon = $scope.uberIcon
-	    // } else if (ap['service'] == 'Lyft') {
-	    // 	apicon = $scope.lyftIcon
-	    // } else if (ap['service'] == 'Sidecar') {
-	    // 	apicon = $scope.sidecarIcon
-	    // }
+	    if (ap['service'] == 'Flywheel') {
+	    	apicon = $scope.flywheelIcon
+	    } else if (ap['service'] == 'Uber') {
+	    	apicon = $scope.uberIcon
+	    } else if (ap['service'] == 'Lyft') {
+	    	apicon = $scope.lyftIcon
+	    } else if (ap['service'] == 'Sidecar') {
+	    	apicon = $scope.sidecarIcon
+	    }
             return {
                 layer: 'realworld',
                 lat: ap['lat'],
-                lng: ap['lon']
-		// icon: apicon
+                lng: ap['lon'],
+		icon: apicon
 	    };
         });
     };
@@ -62,40 +62,32 @@ app.controller("mainCtrl", [ "$scope", "$http", function($scope, $http) {
                 },
 		
 		uberIcon: {
-                    iconUrl: 'img/leaf-orange.png',
-                    shadowUrl: 'img/leaf-shadow.png',
-                    iconSize:     [38, 95],
-                    shadowSize:   [50, 64],
+                    iconUrl: 'images/uber.png',
+                    iconSize:     [32, 32],
                     iconAnchor:   [22, 94],
                     shadowAnchor: [4, 62],
                     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
                 },
-
-			 lyftIcon: {
-                    iconUrl: 'img/leaf-orange.png',
-                    shadowUrl: 'img/leaf-shadow.png',
-                    iconSize:     [38, 95],
-                    shadowSize:   [50, 64],
+		
+		lyftIcon: {
+                    iconUrl: 'images/uber.png',
+                    iconSize:     [32, 32],
                     iconAnchor:   [22, 94],
                     shadowAnchor: [4, 62],
                     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
                 },			
 			
-			  sidecarIcon: {
-                    iconUrl: 'img/leaf-orange.png',
-                    shadowUrl: 'img/leaf-shadow.png',
-                    iconSize:     [38, 95],
-                    shadowSize:   [50, 64],
+		sidecarIcon: {
+                    iconUrl: 'images/uber.png',
+                    iconSize:     [32, 32],
                     iconAnchor:   [22, 94],
                     shadowAnchor: [4, 62],
                     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
                 },
 				
-			 flywheelIcon: {
-                    iconUrl: 'img/leaf-orange.png',
-                    shadowUrl: 'img/leaf-shadow.png',
-                    iconSize:     [38, 95],
-                    shadowSize:   [50, 64],
+		flywheelIcon: {
+                    iconUrl: 'images/uber.png',
+                    iconSize:     [32, 32],
                     iconAnchor:   [22, 94],
                     shadowAnchor: [4, 62],
                     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
