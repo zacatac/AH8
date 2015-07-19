@@ -11,7 +11,7 @@
     <link href="style.css" rel="stylesheet">
     
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Mapbox -->
     <link href='https://mapbox.com/base/latest/base.css' rel='stylesheet'>
     <!-- <script src='js/mapbox.js'></script> -->
@@ -35,7 +35,7 @@
   <body>
 	  <div ng-app="myApp" ng-controller="mainCtrl">
 		  <nav class="navbar navbar-default navbar-fixed-top">
-
+			  
 			  <div class="container">
 				  <div class="navbar-header">
 					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -44,14 +44,14 @@
 						  <span class="icon-bar"></span>
 						  <span class="icon-bar"></span>
 					  </button>
-					  <a class="navbar-brand" href=""><img src="images/Ryder.png" class="img-responsive" alt="logo" width="64" height="64"></a>
+					  <a class="navbar-brand" href=""><img src="images/logo.png" class="img-responsive" alt="logo" width="248" height="248"></a>
 				  </div>
 				  <div id="navbar" class="navbar-collapse collapse">
 
 					  <ul class="nav navbar-nav">
-						  <li><a class=" href="" ng-click="recenterMap('37.793317', '-122.400607')" >SF</a></li>
-						  <li><a ng-click="recenterMap('34.039834', '-118.246349')">LA</a></li>
-						  <li><a ng-click="recenterMap('40.747687', '-73.987328')">NY</a></li>
+						  <li><a href="" ng-click="recenterMap('sf')" >SF</a></li>
+						  <li><a href=""  ng-click="recenterMap('la')">LA</a></li>
+						  <li><a href=""  ng-click="recenterMap('ny')">NY</a></li>
 
 						  <!-- <li class="dropdown">
 						  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -74,26 +74,24 @@
 				  </div><!--/.nav-collapse -->
 			  </div>
 		  </nav>
-		  
-		  
 		  <div class="container-fluid">
           
 			  <div class="row" style="background-color:#8BA0A4">
-              <div class="col-lg-3">
-              <img src="images/logo.png" class="img-responsive" style="max-height:100px; wrapping:0 0 0 0; padding:0 0 0 0;">
-				</div>
-                <div class="col-lg-3">
-                  <button type="button" ng-click="recenterMap('37.793317', '-122.400607')" class="btn btn-default">SF</button>
-                  </div>
-                  <div class="col-lg-3">
-				  <button type="button" ng-click="recenterMap('40.747687', '-73.987328')" class="btn btn-default">NY</button>
-                  </div>
-                  <div class="col-lg-3">
-				  <button type="button" ng-click="recenterMap('34.039834', '-118.246349')" class="btn btn-default">LA</button>
-                  </div>
+				  <!-- <div class="col-lg-3">
+				  <img src="images/logo.png" class="img-responsive" style="max-height:100px; wrapping:0 0 0 0; padding:0 0 0 0;">
+				  </div> -->
+				  <div class="col-lg-3">
+					  <button type="button" ng-click="recenterMap('37.793317', '-122.400607')" class="btn btn-default">SF</button>
+				  </div>
+				  <div class="col-lg-3">
+					  <button type="button" ng-click="recenterMap('40.747687', '-73.987328')" class="btn btn-default">NY</button>
+				  </div>
+				  <div class="col-lg-3">
+					  <button type="button" ng-click="recenterMap('34.039834', '-118.246349')" class="btn btn-default">LA</button>
+				  </div>
 			  </div>
 			  <div class="row">
-				  <leaflet center="center" tiles="tiles" geojson="geojson" markers="markers" layers="layers" event-broadcast="events" width="100%" height="90%"></leaflet>
+				  <leaflet center="center" tiles="tiles" geojson="geojson" markers="markers" layers="layers" event-broadcast="events" width="100%" height="100%"></leaflet>
 			  </div>		
 		  </div>
 	  </div>
