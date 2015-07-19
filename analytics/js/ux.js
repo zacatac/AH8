@@ -1,5 +1,25 @@
 var app = angular.module('myApp', ['leaflet-directive']);
 app.controller("mainCtrl", [ "$scope", "$http", function($scope, $http) {
+    $scope.addressPointsToMarkers = function(points) {
+	return points.map(function(ap) {
+	    if (ap['service'] == 'Flywheel') {
+		apicon = $scope.flywheelIcon
+	    } else if (ap['service'] == 'Uber') {
+		apicon = $scope.uberIcon
+	    } else if (ap['service'] == 'Lyft') {
+		apicon = $scope.lyftIcon
+	    } else if (ap['service'] == 'Sidecar') {
+		apicon = $scope.sidecarIcon
+	    }
+            return {
+                layer: 'realworld',
+                lat: ap['lat'],
+                lng: ap['lon'],
+		icon: apicon
+	    };
+        });
+    };
+    
             angular.extend($scope, {
                 center: {
                     // lat: -33.8979173,		    
@@ -8,41 +28,84 @@ app.controller("mainCtrl", [ "$scope", "$http", function($scope, $http) {
 		    lng: -122.400607,
                     zoom: 14
                 },
-                tiles: {
-                    name: 'Mapbox Park',
-                    url: 'http://api.tiles.mapbox.com/v4/{mapid}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZmVlbGNyZWF0aXZlIiwiYSI6Ik1Gak9FXzAifQ.9eB142zVCM4JMg7btDDaZQ',
-                    type: 'xyz',
-                    options: {
-                        apikey: 'pk.eyJ1IjoiZmVlbGNyZWF0aXZlIiwiYSI6Ik1Gak9FXzAifQ.9eB142zVCM4JMg7btDDaZQ',
-                        mapid: 'feelcreative.llm8dpdk'
+
+
+            tiles: {
+                name: 'Mapbox Park',
+                url: 'http://api.tiles.mapbox.com/v4/{mapid}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZmVlbGNyZWF0aXZlIiwiYSI6Ik1Gak9FXzAifQ.9eB142zVCM4JMg7btDDaZQ',
+                type: 'xyz',
+                options: {
+                 	apikey: 'pk.eyJ1IjoiZmVlbGNyZWF0aXZlIiwiYSI6Ik1Gak9FXzAifQ.9eB142zVCM4JMg7btDDaZQ',
+                 	mapid: 'feelcreative.llm8dpdk'
                     }
                 },
-                geojson: {},
-		markers: {
-		    mark: {
-			layer: "sf",
-			lat: 37.793317, 
-			lng: -122.400607
+					
+			events: {
+                map: {
+                    enable: ['moveend', 'popupopen'],
+                    logic: 'emit'
+                },
+                marker: {
+                    enable: [],
+                    logic: 'emit'
+                }
+                    },
+                
+			layers: {
+                overlays: {
+                    realworld: {
+                        name: "Real world data",
+                        type: "markercluster",
+                        visible: true
+                        }
+                    }
+                },
+		
+		uberIcon: {
+                    iconUrl: 'img/leaf-orange.png',
+                    shadowUrl: 'img/leaf-shadow.png',
+                    iconSize:     [38, 95],
+                    shadowSize:   [50, 64],
+                    iconAnchor:   [22, 94],
+                    shadowAnchor: [4, 62],
+                    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+                },
+
+			 lyftIcon: {
+                    iconUrl: 'img/leaf-orange.png',
+                    shadowUrl: 'img/leaf-shadow.png',
+                    iconSize:     [38, 95],
+                    shadowSize:   [50, 64],
+                    iconAnchor:   [22, 94],
+                    shadowAnchor: [4, 62],
+                    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+                },			
 			
-		    }
-		},
-		layers: {
-		    overlays: {
-			sf: {
-			    name: "San Francisco",
-			    type: "markercluster",
-			    visible: "true"
-			}
-		    }
-		    
-		}
-
+			  sidecarIcon: {
+                    iconUrl: 'img/leaf-orange.png',
+                    shadowUrl: 'img/leaf-shadow.png',
+                    iconSize:     [38, 95],
+                    shadowSize:   [50, 64],
+                    iconAnchor:   [22, 94],
+                    shadowAnchor: [4, 62],
+                    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+                },
+				
+			 flywheelIcon: {
+                    iconUrl: 'img/leaf-orange.png',
+                    shadowUrl: 'img/leaf-shadow.png',
+                    iconSize:     [38, 95],
+                    shadowSize:   [50, 64],
+                    iconAnchor:   [22, 94],
+                    shadowAnchor: [4, 62],
+                    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+                },				
+		geojson: {}
             });
 
-            $http.get("https://a.tiles.mapbox.com/v4/feelcreative.llm8dpdk/features.json?access_token=pk.eyJ1IjoiZmVlbGNyZWF0aXZlIiwiYSI6Ik1Gak9FXzAifQ.9eB142zVCM4JMg7btDDaZQ").success(function(data) {
-                $scope.geojson.data = data;
-                console.log(data);
-            });
+            // $http.get("http://tombatossals.github.io/angular-leaflet-directive/examples/json/realworld.10000.json").success(function(data) {
+            //     $scope.markers = addressPointsToMarkers(data);
+            // });
     radius = '1 km';
     // $http.defaults.headers.common = {"Access-Control-Request-Headers": "accept, origin, authorization"}; 
     $http.defaults.headers.common['Authorization'] = 'Basic ' + btoa('field.zackery@gmail.com' + ':' + 'angelhack');
@@ -66,9 +129,7 @@ app.controller("mainCtrl", [ "$scope", "$http", function($scope, $http) {
     }).success(function(data, status, headers, config) {
 	if (data.documents) {	    
 	    // Draw each marker
-	    console.log(data.documents)
 	    $scope.markers = $scope.addressPointsToMarkers(data.documents)
-	    console.log($scope.markers)
 	}
     }).error(function(data, status, headers, config) {		
 	alert("fail on request");
