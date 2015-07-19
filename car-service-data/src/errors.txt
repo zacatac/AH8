@@ -254,3 +254,417 @@
 2015/07/19 08:20:35 drivers: 33
 2015/07/19 08:21:18 Uber in San Francisco
 2015/07/19 08:21:19 drivers: 39
+2015/07/19 08:21:55 Uber in New York City
+2015/07/19 08:21:57 drivers: 28
+2015/07/19 08:22:40 Lyft in Los Angeles
+2015/07/19 08:22:45 drivers: 15
+2015/07/19 08:23:01 Lyft in San Francisco
+2015/07/19 08:23:05 drivers: 17
+2015/07/19 08:23:22 Lyft in New York City
+2015/07/19 08:23:27 drivers: 13
+2015/07/19 08:23:37 Sidecar in Los Angeles
+2015/07/19 08:23:38 drivers: 0
+2015/07/19 08:23:38 Sidecar in San Francisco
+2015/07/19 08:23:39 drivers: 0
+2015/07/19 08:23:39 Sidecar in New York City
+2015/07/19 08:23:40 drivers: 0
+2015/07/19 08:23:40 Flywheel in Los Angeles
+2015/07/19 08:23:42 drivers: 8
+2015/07/19 08:23:47 Flywheel in San Francisco
+2015/07/19 08:23:48 drivers: 192
+2015/07/19 08:27:40 Flywheel in New York City
+2015/07/19 08:27:41 drivers: 28
+2015/07/19 08:28:14 Traveling with Uber
+2015/07/19 08:28:32 Traveling with Lyft
+2015/07/19 08:28:41 Traveling with Sidecar
+2015/07/19 08:28:42 Traveling with Flywheel
+2015/07/19 08:28:47 Traveling with Uber
+2015/07/19 08:28:56 Traveling with Lyft
+2015/07/19 08:29:07 Traveling with Sidecar
+2015/07/19 08:29:19 Traveling with Flywheel
+2015/07/19 08:29:26 Traveling with Uber
+2015/07/19 08:29:37 Traveling with Lyft
+2015/07/19 08:29:48 Traveling with Sidecar
+2015/07/19 08:29:56 Traveling with Flywheel
+2015/07/19 08:30:33 Uber in Los Angeles
+2015/07/19 08:30:34 drivers: 30
+2015/07/19 08:31:04 Uber in San Francisco
+2015/07/19 08:31:05 drivers: 42
+2015/07/19 08:31:50 Uber in New York City
+2015/07/19 08:31:51 drivers: 34
+2015/07/19 08:32:36 Lyft in Los Angeles
+2015/07/19 08:32:42 drivers: 14
+2015/07/19 08:33:22 Lyft in San Francisco
+2015/07/19 08:33:28 drivers: 14
+2015/07/19 08:35:01 Lyft in New York City
+2015/07/19 08:35:09 drivers: 13
+2015/07/19 08:35:46 Sidecar in Los Angeles
+2015/07/19 08:35:47 drivers: 0
+2015/07/19 08:35:47 Sidecar in San Francisco
+2015/07/19 08:35:49 drivers: 0
+2015/07/19 08:35:49 Sidecar in New York City
+2015/07/19 08:35:50 drivers: 0
+2015/07/19 08:35:50 Flywheel in Los Angeles
+2015/07/19 08:35:51 drivers: 8
+2015/07/19 08:36:00 Flywheel in San Francisco
+2015/07/19 08:36:02 drivers: 185
+2015/07/19 08:39:28 Flywheel in New York City
+2015/07/19 08:39:29 drivers: 31
+2015/07/19 08:40:06 Traveling with Uber
+2015/07/19 08:40:21 Traveling with Lyft
+2015/07/19 08:40:34 Traveling with Sidecar
+2015/07/19 08:40:35 Traveling with Flywheel
+2015/07/19 08:40:42 Traveling with Uber
+2015/07/19 08:41:11 Traveling with Lyft
+2015/07/19 08:41:25 Traveling with Sidecar
+2015/07/19 08:41:35 Traveling with Flywheel
+2015/07/19 08:41:45 Traveling with Uber
+2015/07/19 08:42:08 Traveling with Lyft
+2015/07/19 08:42:27 Traveling with Sidecar
+2015/07/19 08:42:40 Traveling with Flywheel
+2015/07/19 08:43:05 Uber in Los Angeles
+2015/07/19 08:43:06 drivers: 30
+2015/07/19 08:43:34 Uber in San Francisco
+2015/07/19 08:43:35 drivers: 38
+2015/07/19 08:44:51 Uber in New York City
+2015/07/19 08:44:52 drivers: 25
+2015/07/19 08:45:24 Lyft in Los Angeles
+2015/07/19 08:45:28 drivers: 15
+2015/07/19 08:45:55 Lyft in San Francisco
+2015/07/19 08:45:59 drivers: 13
+2015/07/19 08:46:24 Lyft in New York City
+2015/07/19 08:46:28 drivers: 10
+2015/07/19 08:46:42 Sidecar in Los Angeles
+2015/07/19 08:46:43 drivers: 0
+2015/07/19 08:46:43 Sidecar in San Francisco
+2015/07/19 08:46:44 drivers: 0
+2015/07/19 08:46:44 Sidecar in New York City
+2015/07/19 08:46:45 drivers: 0
+2015/07/19 08:46:45 Flywheel in Los Angeles
+2015/07/19 08:46:46 drivers: 8
+2015/07/19 08:46:55 Flywheel in San Francisco
+2015/07/19 08:46:58 drivers: 191
+2015/07/19 08:51:14 Flywheel in New York City
+2015/07/19 08:51:16 drivers: 22
+2015/07/19 08:51:37 Traveling with Uber
+2015/07/19 08:51:52 Traveling with Lyft
+2015/07/19 08:52:41 Traveling with Sidecar
+2015/07/19 08:52:42 Traveling with Flywheel
+2015/07/19 08:52:51 Traveling with Uber
+2015/07/19 08:53:03 Traveling with Lyft
+2015/07/19 08:53:13 Traveling with Sidecar
+2015/07/19 08:53:15 Traveling with Flywheel
+2015/07/19 08:53:23 Traveling with Uber
+2015/07/19 08:53:44 Traveling with Lyft
+2015/07/19 08:54:27 Traveling with Sidecar
+2015/07/19 08:59:06 Traveling with Flywheel
+2015/07/19 09:03:05 Uber in Los Angeles
+2015/07/19 09:03:14 drivers: 32
+2015/07/19 09:09:51 Uber in San Francisco
+2015/07/19 09:09:53 drivers: 31
+2015/07/19 09:10:33 Uber in New York City
+2015/07/19 09:10:34 drivers: 30
+2015/07/19 09:11:49 Lyft in Los Angeles
+2015/07/19 09:11:54 drivers: 17
+2015/07/19 09:12:09 Lyft in San Francisco
+2015/07/19 09:12:14 drivers: 14
+2015/07/19 09:12:27 Lyft in New York City
+2015/07/19 09:12:31 drivers: 9
+2015/07/19 09:12:43 Sidecar in Los Angeles
+2015/07/19 09:12:44 drivers: 0
+2015/07/19 09:12:44 Sidecar in San Francisco
+2015/07/19 09:12:46 drivers: 0
+2015/07/19 09:12:46 Sidecar in New York City
+2015/07/19 09:12:46 drivers: 0
+2015/07/19 09:12:46 Flywheel in Los Angeles
+2015/07/19 09:12:48 drivers: 9
+2015/07/19 09:12:56 Flywheel in San Francisco
+2015/07/19 09:12:58 drivers: 175
+2015/07/19 09:15:31 Flywheel in New York City
+2015/07/19 09:15:32 drivers: 22
+2015/07/19 09:15:40 Traveling with Uber
+2015/07/19 09:15:43 Traveling with Lyft
+2015/07/19 09:15:51 Traveling with Sidecar
+2015/07/19 09:15:52 Traveling with Flywheel
+2015/07/19 09:15:55 Traveling with Uber
+2015/07/19 09:16:00 Traveling with Lyft
+2015/07/19 09:16:06 Traveling with Sidecar
+2015/07/19 09:16:09 Traveling with Flywheel
+2015/07/19 09:16:11 Traveling with Uber
+2015/07/19 09:16:19 Traveling with Lyft
+2015/07/19 09:16:28 Traveling with Sidecar
+2015/07/19 09:16:38 Traveling with Flywheel
+2015/07/19 09:16:41 Uber in Los Angeles
+2015/07/19 09:16:42 drivers: 34
+2015/07/19 09:16:54 Uber in San Francisco
+2015/07/19 09:16:55 drivers: 33
+2015/07/19 09:17:06 Uber in New York City
+2015/07/19 09:17:06 drivers: 30
+2015/07/19 09:17:16 Lyft in Los Angeles
+2015/07/19 09:17:20 drivers: 14
+2015/07/19 09:17:25 Lyft in San Francisco
+2015/07/19 09:17:29 drivers: 12
+2015/07/19 09:17:33 Lyft in New York City
+2015/07/19 09:17:38 drivers: 13
+2015/07/19 09:17:43 Sidecar in Los Angeles
+2015/07/19 09:17:43 drivers: 0
+2015/07/19 09:17:43 Sidecar in San Francisco
+2015/07/19 09:17:44 drivers: 0
+2015/07/19 09:17:44 Sidecar in New York City
+2015/07/19 09:17:45 drivers: 0
+2015/07/19 09:17:45 Flywheel in Los Angeles
+2015/07/19 09:17:46 drivers: 8
+2015/07/19 09:17:50 Flywheel in San Francisco
+2015/07/19 09:17:51 drivers: 172
+2015/07/19 09:19:18 Flywheel in New York City
+2015/07/19 09:19:19 drivers: 21
+2015/07/19 09:19:28 Traveling with Uber
+2015/07/19 09:19:32 Traveling with Lyft
+2015/07/19 09:19:38 Traveling with Sidecar
+2015/07/19 09:19:39 Traveling with Flywheel
+2015/07/19 09:19:42 Traveling with Uber
+2015/07/19 09:19:45 Traveling with Lyft
+2015/07/19 09:19:51 Traveling with Sidecar
+2015/07/19 09:19:54 Traveling with Flywheel
+2015/07/19 09:19:59 Traveling with Uber
+2015/07/19 09:20:02 Traveling with Lyft
+2015/07/19 09:20:09 Traveling with Sidecar
+2015/07/19 09:20:17 Traveling with Flywheel
+2015/07/19 09:20:33 Uber in Los Angeles
+2015/07/19 09:20:34 drivers: 34
+2015/07/19 09:20:46 Uber in San Francisco
+2015/07/19 09:20:47 drivers: 37
+2015/07/19 09:20:58 Uber in New York City
+2015/07/19 09:20:59 drivers: 32
+2015/07/19 09:21:18 Lyft in Los Angeles
+2015/07/19 09:21:22 drivers: 17
+2015/07/19 09:21:34 Lyft in San Francisco
+2015/07/19 09:21:38 drivers: 14
+2015/07/19 09:21:43 Lyft in New York City
+2015/07/19 09:21:48 drivers: 13
+2015/07/19 09:21:53 Sidecar in Los Angeles
+2015/07/19 09:21:54 drivers: 0
+2015/07/19 09:21:54 Sidecar in San Francisco
+2015/07/19 09:21:55 drivers: 0
+2015/07/19 09:21:55 Sidecar in New York City
+2015/07/19 09:21:56 drivers: 0
+2015/07/19 09:21:56 Flywheel in Los Angeles
+2015/07/19 09:21:57 drivers: 8
+2015/07/19 09:22:00 Flywheel in San Francisco
+2015/07/19 09:22:01 drivers: 166
+2015/07/19 09:22:57 Flywheel in New York City
+2015/07/19 09:22:58 drivers: 30
+2015/07/19 09:23:15 Traveling with Uber
+2015/07/19 09:23:18 Traveling with Lyft
+2015/07/19 09:23:25 Traveling with Sidecar
+2015/07/19 09:23:26 Traveling with Flywheel
+2015/07/19 09:23:32 Traveling with Uber
+2015/07/19 09:23:36 Traveling with Lyft
+2015/07/19 09:23:45 Traveling with Sidecar
+2015/07/19 09:23:52 Traveling with Flywheel
+2015/07/19 09:24:00 Traveling with Uber
+2015/07/19 09:24:10 Traveling with Lyft
+2015/07/19 09:24:20 Traveling with Sidecar
+2015/07/19 09:24:28 Traveling with Flywheel
+2015/07/19 09:30:33 Uber in Los Angeles
+2015/07/19 09:30:40 drivers: 33
+2015/07/19 09:34:39 Uber in San Francisco
+2015/07/19 09:34:40 drivers: 28
+2015/07/19 09:34:51 Uber in New York City
+2015/07/19 09:34:52 drivers: 32
+2015/07/19 09:35:03 Lyft in Los Angeles
+2015/07/19 09:35:08 drivers: 15
+2015/07/19 09:35:13 Lyft in San Francisco
+2015/07/19 09:35:17 drivers: 14
+2015/07/19 09:35:22 Lyft in New York City
+2015/07/19 09:35:26 drivers: 11
+2015/07/19 09:35:32 Sidecar in Los Angeles
+2015/07/19 09:35:33 drivers: 0
+2015/07/19 09:35:33 Sidecar in San Francisco
+2015/07/19 09:35:34 drivers: 0
+2015/07/19 09:35:34 Sidecar in New York City
+2015/07/19 09:35:34 drivers: 0
+2015/07/19 09:35:34 Flywheel in Los Angeles
+2015/07/19 09:35:35 drivers: 11
+2015/07/19 09:35:39 Flywheel in San Francisco
+2015/07/19 09:35:41 drivers: 175
+2015/07/19 09:36:40 Flywheel in New York City
+2015/07/19 09:36:42 drivers: 27
+2015/07/19 09:36:49 Traveling with Uber
+2015/07/19 09:36:53 Traveling with Lyft
+2015/07/19 09:37:01 Traveling with Sidecar
+2015/07/19 09:37:02 Traveling with Flywheel
+2015/07/19 09:37:05 Traveling with Uber
+2015/07/19 09:37:10 Traveling with Lyft
+2015/07/19 09:37:15 Traveling with Sidecar
+2015/07/19 09:37:19 Traveling with Flywheel
+2015/07/19 09:37:22 Traveling with Uber
+2015/07/19 09:37:27 Traveling with Lyft
+2015/07/19 09:37:32 Traveling with Sidecar
+2015/07/19 09:37:37 Traveling with Flywheel
+2015/07/19 09:40:33 Uber in Los Angeles
+2015/07/19 09:40:34 drivers: 31
+2015/07/19 09:40:44 Uber in San Francisco
+2015/07/19 09:40:45 drivers: 32
+2015/07/19 09:41:02 Uber in New York City
+2015/07/19 09:41:03 drivers: 37
+2015/07/19 09:41:26 Lyft in Los Angeles
+2015/07/19 09:41:31 drivers: 15
+2015/07/19 09:41:35 Lyft in San Francisco
+2015/07/19 09:41:39 drivers: 13
+2015/07/19 09:41:43 Lyft in New York City
+2015/07/19 09:41:47 drivers: 16
+2015/07/19 09:41:51 Sidecar in Los Angeles
+2015/07/19 09:41:52 drivers: 0
+2015/07/19 09:41:52 Sidecar in San Francisco
+2015/07/19 09:41:53 drivers: 0
+2015/07/19 09:41:53 Sidecar in New York City
+2015/07/19 09:41:54 drivers: 0
+2015/07/19 09:41:54 Flywheel in Los Angeles
+2015/07/19 09:41:54 drivers: 10
+2015/07/19 09:41:58 Flywheel in San Francisco
+2015/07/19 09:41:59 drivers: 174
+2015/07/19 09:43:05 Flywheel in New York City
+2015/07/19 09:43:06 drivers: 23
+2015/07/19 09:43:28 Traveling with Uber
+2015/07/19 09:43:42 Traveling with Lyft
+2015/07/19 09:43:49 Traveling with Sidecar
+2015/07/19 09:43:50 Traveling with Flywheel
+2015/07/19 09:43:57 Traveling with Uber
+2015/07/19 09:44:00 Traveling with Lyft
+2015/07/19 09:44:07 Traveling with Sidecar
+2015/07/19 09:44:10 Traveling with Flywheel
+2015/07/19 09:44:13 Traveling with Uber
+2015/07/19 09:44:18 Traveling with Lyft
+2015/07/19 09:44:26 Traveling with Sidecar
+2015/07/19 09:44:31 Traveling with Flywheel
+2015/07/19 09:50:33 Uber in Los Angeles
+2015/07/19 09:50:35 drivers: 30
+2015/07/19 09:50:47 Uber in San Francisco
+2015/07/19 09:50:47 drivers: 34
+2015/07/19 09:51:00 Uber in New York City
+2015/07/19 09:51:01 drivers: 30
+2015/07/19 09:51:14 Lyft in Los Angeles
+2015/07/19 09:51:18 drivers: 15
+2015/07/19 09:51:25 Lyft in San Francisco
+2015/07/19 09:51:29 drivers: 13
+2015/07/19 09:51:35 Lyft in New York City
+2015/07/19 09:51:39 drivers: 9
+2015/07/19 09:51:42 Sidecar in Los Angeles
+2015/07/19 09:51:43 drivers: 0
+2015/07/19 09:51:43 Sidecar in San Francisco
+2015/07/19 09:51:44 drivers: 0
+2015/07/19 09:51:44 Sidecar in New York City
+2015/07/19 09:51:45 drivers: 0
+2015/07/19 09:51:45 Flywheel in Los Angeles
+2015/07/19 09:51:46 drivers: 10
+2015/07/19 09:51:51 Flywheel in San Francisco
+2015/07/19 09:51:53 drivers: 171
+2015/07/19 09:53:05 Flywheel in New York City
+2015/07/19 09:53:06 drivers: 23
+2015/07/19 09:53:19 Traveling with Uber
+2015/07/19 09:53:27 Traveling with Lyft
+2015/07/19 09:53:36 Traveling with Sidecar
+2015/07/19 09:53:37 Traveling with Flywheel
+2015/07/19 09:53:43 Traveling with Uber
+2015/07/19 09:53:50 Traveling with Lyft
+2015/07/19 09:54:00 Traveling with Sidecar
+2015/07/19 09:54:06 Traveling with Flywheel
+2015/07/19 09:54:22 Traveling with Uber
+2015/07/19 09:54:41 Traveling with Lyft
+2015/07/19 09:55:03 Traveling with Sidecar
+2015/07/19 09:55:10 Traveling with Flywheel
+2015/07/19 10:00:33 Uber in Los Angeles
+2015/07/19 10:00:35 drivers: 35
+2015/07/19 10:01:21 Uber in San Francisco
+2015/07/19 10:01:22 drivers: 37
+2015/07/19 10:01:57 Uber in New York City
+2015/07/19 10:01:58 drivers: 34
+2015/07/19 10:02:28 Lyft in Los Angeles
+2015/07/19 10:02:38 drivers: 17
+2015/07/19 10:02:57 Lyft in San Francisco
+2015/07/19 10:03:02 drivers: 13
+2015/07/19 10:03:14 Lyft in New York City
+2015/07/19 10:03:19 drivers: 13
+2015/07/19 10:03:34 Sidecar in Los Angeles
+2015/07/19 10:03:35 drivers: 0
+2015/07/19 10:03:35 Sidecar in San Francisco
+2015/07/19 10:03:38 drivers: 0
+2015/07/19 10:03:38 Sidecar in New York City
+2015/07/19 10:03:42 drivers: 0
+2015/07/19 10:03:42 Flywheel in Los Angeles
+2015/07/19 10:03:43 drivers: 8
+2015/07/19 10:03:52 Flywheel in San Francisco
+2015/07/19 10:03:54 drivers: 175
+2015/07/19 10:06:27 Flywheel in New York City
+2015/07/19 10:06:29 drivers: 25
+2015/07/19 10:06:51 Traveling with Uber
+2015/07/19 10:07:01 Traveling with Lyft
+2015/07/19 10:07:11 Traveling with Sidecar
+2015/07/19 10:07:13 Traveling with Flywheel
+2015/07/19 10:07:20 Traveling with Uber
+2015/07/19 10:07:27 Traveling with Lyft
+2015/07/19 10:07:37 Traveling with Sidecar
+2015/07/19 10:07:43 Traveling with Flywheel
+2015/07/19 10:07:47 Traveling with Uber
+2015/07/19 10:07:53 Traveling with Lyft
+2015/07/19 10:07:59 Traveling with Sidecar
+2015/07/19 10:08:03 Traveling with Flywheel
+2015/07/19 10:10:33 Uber in Los Angeles
+2015/07/19 10:10:34 drivers: 29
+2015/07/19 10:10:45 Uber in San Francisco
+2015/07/19 10:10:45 drivers: 40
+2015/07/19 10:10:59 Uber in New York City
+2015/07/19 10:11:00 drivers: 28
+2015/07/19 10:11:10 Lyft in Los Angeles
+2015/07/19 10:11:15 drivers: 15
+2015/07/19 10:11:20 Lyft in San Francisco
+2015/07/19 10:11:24 drivers: 18
+2015/07/19 10:11:32 Lyft in New York City
+2015/07/19 10:11:36 drivers: 14
+2015/07/19 10:11:40 Sidecar in Los Angeles
+2015/07/19 10:11:41 drivers: 0
+2015/07/19 10:11:41 Sidecar in San Francisco
+2015/07/19 10:11:42 drivers: 0
+2015/07/19 10:11:42 Sidecar in New York City
+2015/07/19 10:11:43 drivers: 0
+2015/07/19 10:11:43 Flywheel in Los Angeles
+2015/07/19 10:11:44 drivers: 7
+2015/07/19 10:11:46 Flywheel in San Francisco
+2015/07/19 10:11:47 drivers: 174
+2015/07/19 10:13:00 Flywheel in New York City
+2015/07/19 10:13:01 drivers: 21
+2015/07/19 10:13:08 Traveling with Uber
+2015/07/19 10:13:12 Traveling with Lyft
+2015/07/19 10:13:20 Traveling with Sidecar
+2015/07/19 10:13:22 Traveling with Flywheel
+2015/07/19 10:13:27 Traveling with Uber
+2015/07/19 10:13:33 Traveling with Lyft
+2015/07/19 10:13:45 Traveling with Sidecar
+2015/07/19 10:13:48 Traveling with Flywheel
+2015/07/19 10:13:52 Traveling with Uber
+2015/07/19 10:13:57 Traveling with Lyft
+2015/07/19 10:14:03 Traveling with Sidecar
+2015/07/19 10:14:06 Traveling with Flywheel
+2015/07/19 10:20:33 Uber in Los Angeles
+2015/07/19 10:20:35 drivers: 32
+2015/07/19 10:24:59 Uber in San Francisco
+2015/07/19 10:25:00 drivers: 37
+2015/07/19 10:25:12 Uber in New York City
+2015/07/19 10:25:13 drivers: 33
+2015/07/19 10:25:29 Lyft in Los Angeles
+2015/07/19 10:25:34 drivers: 15
+2015/07/19 10:25:39 Lyft in San Francisco
+2015/07/19 10:25:44 drivers: 12
+2015/07/19 10:25:48 Lyft in New York City
+2015/07/19 10:25:52 drivers: 14
+2015/07/19 10:25:57 Sidecar in Los Angeles
+2015/07/19 10:25:58 drivers: 0
+2015/07/19 10:25:58 Sidecar in San Francisco
+2015/07/19 10:25:59 drivers: 0
+2015/07/19 10:25:59 Sidecar in New York City
+2015/07/19 10:26:00 drivers: 0
+2015/07/19 10:26:00 Flywheel in Los Angeles
+2015/07/19 10:26:00 drivers: 8
+2015/07/19 10:26:04 Flywheel in San Francisco
+2015/07/19 10:26:05 drivers: 172
