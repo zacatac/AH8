@@ -1,0 +1,113 @@
+html, body{
+	padding:0;
+	margin:0;
+	width:100%;
+	height:100%;
+	font-family:'Raleway', Helvetica, Arial;
+	font-size:16px;
+	color:#666666;
+	font-weight:400;
+	letter-space:1px;
+}
+
+p{
+	line-height:30px;
+	font-height:400px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin:0px;
+	color:#95a5a6;
+	text-transform:uppercase;
+	font-family:'Raleway', Helvetica, Arial;
+	font-weight: 700;
+}
+
+a{
+	color:#3498db;
+	text-decoration:none;
+}
+
+a:hover, a:focus{
+	color:#3086ac;
+}
+
+.btn-default{
+	border-radius:2px;
+	border:1px solid #bdc3c7;
+	font-size:14px;
+	color:#95a5a6;
+	font-weight:700;
+	text-transform: uppercase;
+	padding:11px 20px;
+}
+
+.btn-default:hover{
+	background:#ffffff;
+	color:#3498db;
+	border:1px solid #3498db;
+}
+
+.btn:active{
+	box-shadow:none;
+}
+
+.container{
+	padding:0;
+	margin:0;
+}
+
+.navbar-default{
+	padding:0;
+	border:0;
+	margin:0;
+	background:#F2F2F2;
+}
+
+/* logo */
+.navbar-brand{
+	/* width:179px;
+	heght:32px; 
+	text-indent:-9999px; */
+	padding:0;
+	margin:0;
+	background:none;
+}
+
+.navbar-default .navbar-nav>li>a{
+	font-size:15px;
+	font-weight:600px;
+	text-transform:uppercase;
+	color:#95a5a6;
+	padding:1ppx 0;
+	text-align:center;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default navbar-nav>li>a:focus{
+	color:#ffffff;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:active, .navbar-default .navbar-nav>.active>a:focus{
+	color:#fff;
+	outline:0;
+}
+.navbar-toggle{
+	borer:none;
+	margin-top:;
+	margin-right:;
+	text-align:center;
+	color:#fff;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+	background:none;
+	outline: none;
+}
+
+.navbar-default .navbar-collapse{
+	border:none;
+	border-radius:0;
+	box-shadow:none;
+}
+
+@import 'https://ajax.googleapis.com/ajax/libs/angular_material/0.9.0/angular-material.min.css';
+@import 'https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css';
+@import 'https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css';
+@import 'https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css';

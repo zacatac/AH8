@@ -132,8 +132,8 @@ func requestFare(collect CollectOption) <-chan []byte {
 			(collect.End != *geo.NewPoint(0, 0)) {
 			to, from = pointToString(collect.Start), pointToString(collect.End)
 		}
-		fmt.Println(collect.Service)
 		url := fmt.Sprintf("http://api.rydrapp.co/v1/Ride/Options?pickup_location=%s&dropoff_location=%s&app=%s", from, to, collect.Service)
+		fmt.Println(url)
 		resp, body, errs := request.Get(url).End()
 		if resp.StatusCode != 200 || len(errs) > 0 {
 			responses <- []byte(fmt.Sprint(resp.StatusCode, errs))
@@ -151,7 +151,15 @@ func parseDriver(responses <-chan []byte, service constants.ServiceFlag) (data [
 		if err != nil {
 			return nil, err
 		}
-		for i, d := range searchData.Data[0].Drivers {
+		if searchData.Error != false {
+			return nil, errors.New("Server side error")
+		}
+		dataList := searchData.Data
+		if len(dataList) == 0 {
+			// No data
+			return nil, nil
+		}
+		for i, d := range dataList[0].Drivers {
 			now := time.Now()
 			driver := DriverData{
 				Id:       now.Unix() + int64(i) + rand.Int63n(math.MaxInt64),
@@ -170,12 +178,18 @@ func parseFare(responses <-chan []byte, option CollectOption) (data []FareData, 
 	data = make([]FareData, cap(responses))
 	for f := range responses {
 		fareData, err := fareDataDecode(f)
-		fmt.Println(string(f))
-		fmt.Println(fareData)
 		if err != nil {
 			return nil, err
 		}
-		for i, d := range fareData.Data[0].Options {
+		if fareData.Error != false {
+			return nil, errors.New("Server side error")
+		}
+		dataList := fareData.Data
+		if len(dataList) == 0 {
+			// No data
+			return nil, nil
+		}
+		for i, d := range dataList[0].Options {
 			now := time.Now()
 			info := FareData{
 				Id:      now.Unix() + int64(i) + rand.Int63n(math.MaxInt64),
@@ -188,7 +202,6 @@ func parseFare(responses <-chan []byte, option CollectOption) (data []FareData, 
 				Type:    d.Service,
 			}
 			data = append(data, info)
-			fmt.Println(data)
 		}
 	}
 	return data, nil

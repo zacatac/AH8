@@ -13,6 +13,7 @@ import (
 	"os"
 	"path/filepath"
 	"store"
+	"time"
 )
 
 var (
@@ -49,6 +50,16 @@ var trips = []trip{
 		start: *geo.NewPoint(40.751247, -73.993819),
 		end:   *geo.NewPoint(40.704681, -74.007712),
 	},
+	trip{
+		name:  "Embarcadero to city hall",
+		start: *geo.NewPoint(37.793660, -122.395452),
+		end:   *geo.NewPoint(37.779704, -122.418914),
+	},
+	trip{
+		name:  "downtown LA to Hollywood",
+		start: *geo.NewPoint(34.048555, -118.245216),
+		end:   *geo.NewPoint(34.090904, -118.325662),
+	},
 }
 
 type driverJob struct {
@@ -67,18 +78,33 @@ type trip struct {
 }
 
 func main() {
-	flag.Parse()
-	log.SetFlags(0)
+	driverAggregation()
+	fareAggregation()
+	t := time.NewTicker(10 * time.Minute)
+	for _ = range t.C {
+		driverAggregation()
+		fareAggregation()
+	}
+}
 
+func driverAggregation() {
+	//Driver data
 	iters := len(cities) * len(services)
-	done := make(chan bool, iters)
-	jobs := createDriverJobs()
-	getDriverData(jobs, done)
-	// iters := len(trips) * len(services)
-	// done := make(chan bool, iters)
-	// jobs := createFareJobs()
-	// getFareData(jobs, done)
-	awaitCompletion(done, iters)
+	doneDriver := make(chan bool, iters)
+	driverJobs := createDriverJobs()
+	getDriverData(driverJobs, doneDriver)
+	awaitCompletion(doneDriver, iters)
+
+}
+
+func fareAggregation() {
+	//Fare data
+	iters := len(trips) * len(services)
+	doneFare := make(chan bool, iters)
+	fareJobs := createFareJobs()
+	getFareData(fareJobs, doneFare)
+	awaitCompletion(doneFare, iters)
+
 }
 
 func createDriverJobs() (jobs chan driverJob) {
@@ -109,47 +135,46 @@ func createFareJobs() (jobs chan fareJob) {
 
 func getDriverData(jobs chan driverJob, done chan bool) {
 	go func() {
-		job := <-jobs
-		log.Printf("%s in %s\n", job.service, job.city)
-		option := collect.CollectOption{
-			Loc:     job.city.Loc,
-			Service: job.service,
+		for job := range jobs {
+			log.Printf("%s in %s\n", job.service, job.city)
+			option := collect.CollectOption{
+				Loc:     job.city.Loc,
+				Service: job.service,
+			}
+			data, err := collect.CollectDriver(option)
+			if err != nil {
+				log.Printf("CollectDriver(): %s\n", err)
+			}
+			log.Printf("drivers: %d\n", len(data))
+			err = store.StoreDriver(data)
+			if err != nil {
+				log.Printf("StoreDriver(): %s\n", err)
+			}
+			done <- true
 		}
-		data, err := collect.CollectDriver(option)
-		if err != nil {
-			log.Printf("CollectDriver(): %s\n", err)
-		}
-		log.Printf("drivers: %d\n", len(data))
-		err = store.StoreDriver(data)
-		if err != nil {
-			log.Printf("StoreDriver(): %s", err)
-		}
-		done <- true
 	}()
 }
 
 func getFareData(jobs chan fareJob, done chan bool) {
 	go func() {
-		job := <-jobs
-		log.Printf("Traveling with %s", job.service)
-		option := collect.CollectOption{
-			Start:   job.start,
-			End:     job.end,
-			Service: job.service,
+		for job := range jobs {
+			log.Printf("Traveling with %s\n", job.service)
+			option := collect.CollectOption{
+				Start:   job.start,
+				End:     job.end,
+				Service: job.service,
+			}
+			data, err := collect.CollectFare(option)
+			if err != nil {
+				log.Printf("CollectFare(): %s\n", err)
+			}
+			err = store.StoreFare(data)
+			if err != nil {
+				log.Printf("StoreFare(): %s\n", err)
+			}
+			done <- true
 		}
-		fmt.Println(option)
-		data, err := collect.CollectFare(option)
-		fmt.Println(data)
-		if err != nil {
-			log.Printf("CollectFare(): %s\n", err)
-		}
-		err = store.StoreFare(data)
-		if err != nil {
-			log.Printf("StoreFare(): %s", err)
-		}
-		done <- true
 	}()
-
 }
 
 func awaitCompletion(done chan bool, workers int) {
