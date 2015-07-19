@@ -2,20 +2,20 @@ var app = angular.module('myApp', ['leaflet-directive']);
 app.controller("mainCtrl", [ "$scope", "$http", function($scope, $http) {
     $scope.addressPointsToMarkers = function(points) {
 	return points.map(function(ap) {
-	    if (ap['service'] == 'Flywheel') {
-		apicon = $scope.flywheelIcon
-	    } else if (ap['service'] == 'Uber') {
-		apicon = $scope.uberIcon
-	    } else if (ap['service'] == 'Lyft') {
-		apicon = $scope.lyftIcon
-	    } else if (ap['service'] == 'Sidecar') {
-		apicon = $scope.sidecarIcon
-	    }
+	    // if (ap['service'] == 'Flywheel') {
+	    // 	apicon = $scope.flywheelIcon
+	    // } else if (ap['service'] == 'Uber') {
+	    // 	apicon = $scope.uberIcon
+	    // } else if (ap['service'] == 'Lyft') {
+	    // 	apicon = $scope.lyftIcon
+	    // } else if (ap['service'] == 'Sidecar') {
+	    // 	apicon = $scope.sidecarIcon
+	    // }
             return {
                 layer: 'realworld',
                 lat: ap['lat'],
-                lng: ap['lon'],
-		icon: apicon
+                lng: ap['lon']
+		// icon: apicon
 	    };
         });
     };
